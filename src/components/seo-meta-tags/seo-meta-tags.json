@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_seo_meta_tags_seo_meta_tags",
+  "info": {
+    "displayName": "seo-meta-tags",
+    "icon": "cube"
+  },
+  "options": {},
+  "attributes": {
+    "title_and_og_title": {
+      "type": "string",
+      "default": "Websites meta title"
+    },
+    "description_and_og_description": {
+      "type": "string",
+      "default": "Websites meta description",
+      "maxLength": 135
+    },
+    "og_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

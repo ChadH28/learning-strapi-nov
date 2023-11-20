@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "store_item",
+  "info": {
+    "singularName": "store-items",
+    "pluralName": "store-item",
+    "displayName": "store items"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "item_name": {
+      "type": "string"
+    }
+  }
+}
