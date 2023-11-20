@@ -376,6 +376,9 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
   attributes: {
     Title: Attribute.String;
     slug: Attribute.UID<'api::homepage.homepage', 'Title'>;
+    seo_tags: Attribute.Component<'seo-meta-tags.seo-meta-tags'>;
+    content: Attribute.Text;
+    homepage_button: Attribute.Component<'button.button'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -400,12 +403,14 @@ export interface ApiStoreItemsStoreItems extends Schema.CollectionType {
     singularName: 'store-items';
     pluralName: 'store-item';
     displayName: 'store items';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     item_name: Attribute.String;
+    slug: Attribute.UID<'api::store-items.store-items', 'item_name'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

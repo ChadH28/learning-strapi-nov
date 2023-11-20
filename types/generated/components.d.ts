@@ -17,6 +17,7 @@ export interface SeoMetaTagsSeoMetaTags extends Schema.Component {
   info: {
     displayName: 'seo-meta-tags';
     icon: 'cube';
+    description: '';
   };
   attributes: {
     title_and_og_title: Attribute.String &

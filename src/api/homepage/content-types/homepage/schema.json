@@ -18,6 +18,19 @@
     "slug": {
       "type": "uid",
       "targetField": "Title"
+    },
+    "seo_tags": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo-meta-tags.seo-meta-tags"
+    },
+    "content": {
+      "type": "text"
+    },
+    "homepage_button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "button.button"
     }
   }
 }
