@@ -4,16 +4,25 @@
  * `page-populating` middleware
  */
 
+const populate = "deep";
 // If you want to bring back as much information as possible, use the wildcard * operator.
-const populate = "*";
+// const populate = "*";
+
 // but if you want better page performance and low data fetching you can filter the query
-// populate: [
-//   "cover",
-//   "category",
-//   "blocks",
-//   "authorsBio",
-//   "seo"
-// ],
+// const populate = {
+//   metadata: {
+//     populate: "*",
+//   },
+//   blocks: {
+//     populate: "*",
+//   },
+//   button: {
+//     populate: "*",
+//   },
+//   hero: {
+//     populate: "*",
+//   },
+// };
 
 module.exports = (/** @type {any} */ config, { strapi }) => {
   return async (

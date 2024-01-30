@@ -24,13 +24,10 @@
       "repeatable": false,
       "component": "seo-meta-tags.seo-meta-tags"
     },
-    "content": {
-      "type": "text"
-    },
-    "homepage_button": {
+    "hero": {
       "type": "component",
       "repeatable": false,
-      "component": "button.button"
+      "component": "blocks.hero"
     }
   }
 }

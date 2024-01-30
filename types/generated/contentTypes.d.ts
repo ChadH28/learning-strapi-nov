@@ -377,8 +377,7 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
     Title: Attribute.String;
     slug: Attribute.UID<'api::homepage.homepage', 'Title'>;
     seo_tags: Attribute.Component<'seo-meta-tags.seo-meta-tags'>;
-    content: Attribute.Text;
-    homepage_button: Attribute.Component<'button.button'>;
+    hero: Attribute.Component<'blocks.hero'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

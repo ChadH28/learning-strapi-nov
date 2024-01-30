@@ -1,5 +1,18 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface BlocksHero extends Schema.Component {
+  collectionName: 'components_blocks_heroes';
+  info: {
+    displayName: 'hero';
+  };
+  attributes: {
+    title: Attribute.String;
+    paragraph: Attribute.Text;
+    cta: Attribute.Component<'button.button'>;
+    image: Attribute.Media;
+  };
+}
+
 export interface ButtonButton extends Schema.Component {
   collectionName: 'components_button_buttons';
   info: {
@@ -34,6 +47,7 @@ export interface SeoMetaTagsSeoMetaTags extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'blocks.hero': BlocksHero;
       'button.button': ButtonButton;
       'seo-meta-tags.seo-meta-tags': SeoMetaTagsSeoMetaTags;
     }
